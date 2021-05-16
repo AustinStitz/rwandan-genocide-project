@@ -1,0 +1,127 @@
+:root {
+  --theme-color-1: #3399ff;
+  --theme-color-2: white;
+  --theme-font-1: white;
+  --theme-font-2: #3399ff;
+}
+
+body, html {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  text-align: center;
+  list-style-position: inside;
+}
+
+ul li {
+  transform: translateX(-1em);
+}
+
+ul li a {
+  text-decoration:  underline;
+  color: inherit;
+}
+
+.slant {
+  color: var(--theme-font-1);
+  background-color: var(--theme-color-1);
+  text-align: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  min-height: calc(50% + 50px);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 100px), 0 100%);
+  overflow: visible;
+  width: 100%;
+  margin: 0;
+}
+
+.header .header-content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.theme {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.desc {
+  width: 300px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.desc2 {
+  width: 500px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.slant-top:nth-child(even) {
+  color: var(--theme-font-2);
+  background-color: var(--theme-color-2);
+  text-align: center;
+  position: absolute;
+  left: 0;
+  min-height: calc(50% + 150px);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  clip-path: polygon(0 100px, 100% 0, 100% 100%, 0 calc(100% - 100px));
+  overflow: visible;
+  width: 100%;
+  margin: 0;
+}
+
+.slant-top:nth-child(odd) {
+  color: var(--theme-font-1);
+  background-color: var(--theme-color-1);
+  text-align: center;
+  position: absolute;
+  left: 0;
+  min-height: calc(50% + 150px);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  clip-path: polygon(0 0, 100% 100px, 100% calc(100% - 100px), 0 100%);
+  overflow: visible;
+  width: 100%;
+  margin: 0;
+}
+
+.slant-bot:nth-child(even) {
+  color: var(--theme-font-2);
+  background-color: var(--theme-color-2);
+  text-align: center;
+  position: absolute;
+  left: 0;
+  min-height: calc(50% + 50px);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  clip-path: polygon(0 100px, 100% 0, 100% 100%, 0 100%);
+  overflow: visible;
+  width: 100%;
+  margin: 0;
+}
+
+.slant-bot:nth-child(odd) {
+  color: var(--theme-font-1);
+  background-color: var(--theme-color-1);
+  text-align: center;
+  position: absolute;
+  left: 0;
+  min-height: calc(50% + 50px);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 100%);
+  overflow: visible;
+  width: 100%;
+  margin: 0;
+}
+
+.slant-top *:first-child, .slant-bot *:first-child {
+  margin-top: 100px;
+}
